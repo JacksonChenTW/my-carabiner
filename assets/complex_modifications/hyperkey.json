@@ -1,0 +1,688 @@
+{
+  "title": "HyperKey and Usages",
+  "rules": [
+    {
+      "description": "Set caps_lock as hyper key to right command+control+option+shift.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_shift",
+              "modifiers": ["right_command", "right_control", "right_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set WSAD as speedy mouse key with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "y": -1536
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "x": -1536
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "y": 1536
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "x": 1536
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set WSAD + left_command as slow mouse key with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "y": -400
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "x": -400
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "y": 400
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "x": 400
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set RF as mouse scroll with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "vertical_wheel": -32
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "vertical_wheel": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set QE as mouse button with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set IKJL as arrow key with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set g as enter with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set h as delete with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set m as delete with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set n as delete a word ahead with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set comma as delete forward with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set period as delete with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set e as escape with Hyper key & always switch back to Eng",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape",
+              "select_input_source": {
+                "language": "en"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Use 1/2/3 to switch language to English, Chinese, Japanese with hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "select_input_source": {
+                "language": "en"
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "select_input_source": {
+                "language": "zh-Hant"
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "select_input_source": {
+                "input_mode_id": "com.apple.inputmethod.Japanese"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Set c as ctrl+c with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["left_control"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "To switch language, set space as ctrl+space with Hyper key",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
