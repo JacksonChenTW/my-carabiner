@@ -1,0 +1,33 @@
+{
+	"title": "switch English by Escape key",
+	"rules": [
+		{
+			"description": "Switch to English directly by using the Escapse key",
+        "manipulators": [
+        {
+            "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+ 						{
+							"select_input_source": {
+								"language": "en"
+						  }
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+		}
+	]
+}
