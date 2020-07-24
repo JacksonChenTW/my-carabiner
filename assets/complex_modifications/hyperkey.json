@@ -535,12 +535,12 @@
       ]
     },
     {
-      "description": "Set e as escape with Hyper key & always switch back to Eng",
+      "description": "Set ` as escape with Hyper key & always switch back to Eng",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "e",
+            "key_code": "grave_accent_an",
             "modifiers": {
               "mandatory": [
                 "right_shift",
