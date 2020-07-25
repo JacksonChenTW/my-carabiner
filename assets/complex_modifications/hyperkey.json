@@ -535,34 +535,6 @@
       ]
     },
     {
-      "description": "Set ` as escape with Hyper key & always switch back to Eng",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "grave_accent_an",
-            "modifiers": {
-              "mandatory": [
-                "right_shift",
-                "right_command",
-                "right_control",
-                "right_option"
-              ],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "escape",
-              "select_input_source": {
-                "language": "en"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Use 1/2/3 to switch language to English, Chinese, Japanese with hyper key",
       "manipulators": [
         {
