@@ -40,7 +40,7 @@
           "to": [
             {
               "mouse_key": {
-                "y": -1536
+                "y": -2536
               }
             }
           ]
@@ -61,7 +61,7 @@
           "to": [
             {
               "mouse_key": {
-                "x": -1536
+                "x": -2536
               }
             }
           ]
@@ -223,7 +223,7 @@
           "to": [
             {
               "mouse_key": {
-                "vertical_wheel": -32
+                "vertical_wheel": 32
               }
             }
           ]
@@ -245,7 +245,7 @@
           "to": [
             {
               "mouse_key": {
-                "vertical_wheel": 32
+                "vertical_wheel": -32
               }
             }
           ]
