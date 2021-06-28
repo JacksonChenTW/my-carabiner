@@ -707,6 +707,32 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Set hyper+b as ctlr+b ",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "right_command",
+                "right_control",
+                "right_option"
+              ],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": ["left_control"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
